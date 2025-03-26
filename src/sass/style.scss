@@ -1,12 +1,41 @@
+@use '../sass/blocks/promo.scss';
+
 @font-face {
     font-family: 'Gilroy';
     src: url(../fonts/Gilroy-Regular.woff) format(woff);
-    src: url(../fonts/Gilroy-Medium.woff) format(woff);
-    src: url(../fonts/Gilroy-Bold.woff) format(woff);
     font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy-Medium.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy-Bold.woff) format('woff');
+    font-weight: bold;
     font-style: normal;
 }
 
 body {
     font-family: 'Gilroy', sans-serif;
+}
+
+h1 {
+    font-size: 47px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.container {
+    width: 945px;
+    margin: 0 auto;
 }
