@@ -138,6 +138,39 @@
   height: 16px;
 }
 
+.portfolio {
+  padding: 112px 0 96px;
+}
+
+.portfolio__title {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.portfolio__wrap {
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 60px;
+  display: flex;
+}
+
+.portfolio__item {
+  width: 300px;
+  height: 300px;
+}
+
+.portfolio__item img {
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.portfolio__item a {
+  color: #070707;
+  font-size: 18px;
+  text-decoration: none;
+}
+
 @font-face {
   font-family: Gilroy;
   src: url("Gilroy-Regular.984b2e79.woff") format("woff");
