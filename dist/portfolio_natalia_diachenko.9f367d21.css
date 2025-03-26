@@ -1,4 +1,13 @@
-h1 {
-  color: green;
+@font-face {
+  font-family: Gilroy;
+  src: url("Gilroy-Regular.984b2e79.woff") format("woff");
+  src: url("Gilroy-Medium.d60be8b4.woff") format("woff");
+  src: url("Gilroy-Bold.c73addea.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Gilroy, sans-serif;
 }
 /*# sourceMappingURL=portfolio_natalia_diachenko.9f367d21.css.map */
