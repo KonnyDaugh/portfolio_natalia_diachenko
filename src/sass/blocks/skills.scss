@@ -1,0 +1,43 @@
+@use '../base/variables.scss' as *;
+
+.skills {
+    padding: 90px 0 110px 0;
+    &__title {
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__subtitle {
+        margin: 70px auto 0 auto;
+        text-align: center;
+        font-size: 18px;
+    }
+    &__wrapper {
+        margin-top: 83px;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        column-gap: 90px;
+        grid-auto-rows: auto;
+        row-gap: 50px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 88px;
+            height: 88px;
+        }
+        &-descr {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        &-stars {
+            margin-top: 40px;
+            img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}

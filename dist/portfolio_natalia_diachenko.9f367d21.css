@@ -89,6 +89,55 @@
   font-size: 18px;
 }
 
+.skills {
+  padding: 90px 0 110px;
+}
+
+.skills__title {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.skills__subtitle {
+  text-align: center;
+  margin: 70px auto 0;
+  font-size: 18px;
+}
+
+.skills__wrapper {
+  grid-template-columns: repeat(4, auto);
+  grid-auto-rows: auto;
+  gap: 50px 90px;
+  margin-top: 83px;
+  display: grid;
+}
+
+.skills__item {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.skills__item img {
+  width: 88px;
+  height: 88px;
+}
+
+.skills__item-descr {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.skills__item-stars {
+  margin-top: 40px;
+}
+
+.skills__item-stars img {
+  width: 16px;
+  height: 16px;
+}
+
 @font-face {
   font-family: Gilroy;
   src: url("Gilroy-Regular.984b2e79.woff") format("woff");
