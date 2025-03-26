@@ -1,0 +1,21 @@
+@use '../base/variables.scss' as *;
+
+.about {
+    padding: 120px 0 107px 0;
+    background-color: $light-grey;
+    &__title {
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__text {
+        margin: 18px auto 0 auto;
+        width: 485px;
+        display: flex;
+        flex-direction: column;
+        p {
+            text-align: center;
+            font-size: 18px;
+            color: $black;
+        }
+    }
+}

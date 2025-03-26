@@ -66,6 +66,29 @@
   width: 100%;
 }
 
+.about {
+  background-color: #f6f6f6;
+  padding: 120px 0 107px;
+}
+
+.about__title {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about__text {
+  flex-direction: column;
+  width: 485px;
+  margin: 18px auto 0;
+  display: flex;
+}
+
+.about__text p {
+  text-align: center;
+  color: #070707;
+  font-size: 18px;
+}
+
 @font-face {
   font-family: Gilroy;
   src: url("Gilroy-Regular.984b2e79.woff") format("woff");
@@ -88,6 +111,7 @@
 }
 
 body {
+  margin: 0;
   font-family: Gilroy, sans-serif;
 }
 

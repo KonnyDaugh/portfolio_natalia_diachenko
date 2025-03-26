@@ -1,4 +1,5 @@
 @use '../sass/blocks/promo.scss';
+@use '../sass/blocks/about.scss';
 
 @font-face {
     font-family: 'Gilroy';
@@ -22,6 +23,7 @@
 }
 
 body {
+    margin: 0;
     font-family: 'Gilroy', sans-serif;
 }
 
