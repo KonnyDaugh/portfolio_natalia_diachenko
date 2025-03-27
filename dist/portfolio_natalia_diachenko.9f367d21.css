@@ -191,6 +191,7 @@
 
 .contacts__btn {
   color: #fff;
+  cursor: pointer;
   background: url("contacts_btn.75f6c4fe.svg") center / cover no-repeat;
   justify-content: center;
   align-items: center;
@@ -199,6 +200,7 @@
   margin: 29px auto 0;
   font-size: 18px;
   font-weight: 500;
+  text-decoration: none;
   display: flex;
 }
 
