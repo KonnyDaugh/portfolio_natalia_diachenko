@@ -1,0 +1,14 @@
+# Игнорируем node_modules (зависимости)
+node_modules/
+
+# Кэш Parcel и gh-pages
+.cache/
+dist/
+
+# Файлы настроек редакторов
+.vscode/
+.idea/
+
+# Логи и временные файлы
+npm-debug.log
+yarn-error.log

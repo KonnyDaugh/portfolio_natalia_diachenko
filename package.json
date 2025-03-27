@@ -1,10 +1,12 @@
 {
   "name": "portfolio_natalia_diachenko",
   "version": "1.0.0",
+  "homepage": "https://konnydaugh.github.io/portfolio_natalia_diachenko",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +14,7 @@
   "description": "",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.14.2",
+    "gh-pages": "^6.3.0",
     "parcel": "^2.14.2",
     "sass": "^1.86.0",
     "svgo": "^3.3.2"
