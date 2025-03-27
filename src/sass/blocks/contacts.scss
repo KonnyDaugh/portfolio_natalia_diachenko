@@ -1,0 +1,35 @@
+@use '../base/variables.scss' as *;
+
+.contacts {
+    padding: 114px 0 123px 0;
+    &__title {
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__subtitle {
+        margin-top: 20px;
+        text-align: center;
+    }
+    &__btn {
+        margin: 29px auto 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('../icons/contacts_btn.svg') center center / cover no-repeat;
+        width: 180px;
+        height: 42px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &__social {
+        margin: 80px auto 0 auto;
+        display: flex;
+        width: 342px;
+        justify-content: space-between;
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

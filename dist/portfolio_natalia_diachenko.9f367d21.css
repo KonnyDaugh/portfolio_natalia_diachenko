@@ -139,6 +139,7 @@
 }
 
 .portfolio {
+  background-color: #f6f6f6;
   padding: 112px 0 96px;
 }
 
@@ -156,19 +157,61 @@
 
 .portfolio__item {
   width: 300px;
-  height: 300px;
+  height: auto;
+  overflow: hidden;
 }
 
 .portfolio__item img {
   object-fit: cover;
+  border-radius: 5px;
   width: 100%;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 5px #0003;
 }
 
 .portfolio__item a {
   color: #070707;
   font-size: 18px;
   text-decoration: none;
+}
+
+.contacts {
+  padding: 114px 0 123px;
+}
+
+.contacts__title {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contacts__subtitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contacts__btn {
+  color: #fff;
+  background: url("contacts_btn.75f6c4fe.svg") center / cover no-repeat;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 42px;
+  margin: 29px auto 0;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+}
+
+.contacts__social {
+  justify-content: space-between;
+  width: 342px;
+  margin: 80px auto 0;
+  display: flex;
+}
+
+.contacts__social img {
+  width: 40px;
+  height: 40px;
 }
 
 @font-face {
