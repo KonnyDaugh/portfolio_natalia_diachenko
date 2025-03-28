@@ -5,8 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --dist-dir dist",
-    "deploy": "npm run build && gh-pages -d dist"
+    "clean": "rm -rf dist",
+    "build": "npm run clean && parcel build src/index.html --public-url ./"  
   },
   "keywords": [],
   "author": "",

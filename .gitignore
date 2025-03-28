@@ -2,6 +2,7 @@
 node_modules/
 
 # Кэш Parcel и gh-pages
+.parcel-cache/
 .cache/
 dist/
 
