@@ -35,3 +35,13 @@
         }
     }
 }
+
+@media screen and (max-width: 393px) {
+    .contacts {
+        padding: 50px 0;
+        &__social {
+            margin-top: 40px;
+            width: 250px;
+        }
+    }
+}

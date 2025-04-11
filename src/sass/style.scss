@@ -4,6 +4,7 @@
 @use '../sass/blocks/portfolio.scss';
 @use '../sass/blocks/contacts.scss';
 
+
 @font-face {
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-Regular.woff') format('woff');
@@ -44,3 +45,19 @@ h2 {
     width: 945px;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 393px) {
+    .container {
+        width: 300px;
+    }
+    h1, h2 {
+        font-size: 30px;
+    }
+}
+

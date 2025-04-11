@@ -19,3 +19,15 @@
         }
     }
 }
+
+@media screen and (max-width: 393px) {
+    .about {
+        padding: 50px 0;
+        &__text {
+            width: 100%;
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
