@@ -46,6 +46,14 @@
   line-height: 1.8;
 }
 
+.accessNote {
+  max-width: 70ch;
+  margin: 1.25rem 0 0;
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
 .technologies {
   display: flex;
   flex-wrap: wrap;

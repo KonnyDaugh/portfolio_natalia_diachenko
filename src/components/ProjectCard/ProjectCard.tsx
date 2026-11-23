@@ -6,8 +6,11 @@ export interface Project {
   subtitle: string;
   description: string;
   technologies: readonly string[];
-  githubUrl: string;
+  githubUrl?: string;
+  githubLabel?: string;
+  requestAccessUrl?: string;
   status?: string;
+  accessNote?: string;
   image?: {
     src: string;
     alt: string;
@@ -22,7 +25,7 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
-  const { id, title, subtitle, description, technologies, githubUrl, status, image, liveDemoUrl } = project;
+  const { id, title, subtitle, description, technologies, githubUrl, githubLabel, requestAccessUrl, status, accessNote, image, liveDemoUrl } = project;
 
   return (
     <article
@@ -44,18 +47,31 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <ul className={styles.technologies} aria-label="Technologies">
           {technologies.map((technology) => <li key={technology}>{technology}</li>)}
         </ul>
-        <div className={styles.links}>
-          <a href={githubUrl} target="_blank" rel="noopener noreferrer"
-            aria-label={`${title} on GitHub (opens in a new tab)`}>
-            GitHub <span aria-hidden="true">↗</span>
-          </a>
-          {liveDemoUrl && (
-            <a href={liveDemoUrl} target="_blank" rel="noopener noreferrer"
-              aria-label={`${title}: Live Demo (opens in a new tab)`}>
-              Live Demo <span aria-hidden="true">↗</span>
-            </a>
-          )}
-        </div>
+        {accessNote && <p className={styles.accessNote} id={`${id}-access-note`}>{accessNote}</p>}
+        {(githubUrl || liveDemoUrl || requestAccessUrl) && (
+          <div className={styles.links}>
+            {githubUrl && (
+              <a href={githubUrl} target="_blank" rel="noopener noreferrer"
+                aria-label={githubLabel ? `${title}: ${githubLabel} (opens in a new tab)` : `${title} on GitHub (opens in a new tab)`}
+                aria-describedby={accessNote ? `${id}-access-note` : undefined}>
+                {githubLabel || <>GitHub <span aria-hidden="true">↗</span></>}
+              </a>
+            )}
+            {requestAccessUrl && (
+              <a href={requestAccessUrl}
+                aria-label={`${title}: Request Access by email`}
+                aria-describedby={accessNote ? `${id}-access-note` : undefined}>
+                Request Access
+              </a>
+            )}
+            {liveDemoUrl && (
+              <a href={liveDemoUrl} target="_blank" rel="noopener noreferrer"
+                aria-label={`${title}: Live Demo (opens in a new tab)`}>
+                Live Demo <span aria-hidden="true">↗</span>
+              </a>
+            )}
+          </div>
+        )}
       </div>
     </article>
   );

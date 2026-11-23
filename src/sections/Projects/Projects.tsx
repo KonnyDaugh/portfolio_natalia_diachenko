@@ -23,7 +23,11 @@ const projects: readonly Project[] = [
     subtitle: 'Collaborative Frontend Application',
     description: 'A collaborative frontend project involving reusable React components, API integration, routing, and team-based development workflows.',
     technologies: ['React', 'TypeScript', 'SCSS Modules', 'TanStack Query', 'React Router'],
-    githubUrl: 'https://github.com/ezotop/cpa-f',
+    githubUrl: 'https://github.com/KonnyDaugh/cpa-frontend',
+    githubLabel: 'GitHub Repository',
+    requestAccessUrl: 'mailto:natalydiach@gmail.com?subject=CPA%20Frontend%20Access%20Request',
+    status: 'Private Team Project',
+    accessNote: 'This repository is private and requires access approval. The GitHub link works only for authorized visitors. Use Request Access to request access by email.',
   },
   {
     id: 'hgd-stjepan-radic',
