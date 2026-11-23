@@ -41,7 +41,12 @@
     color: var(--color-muted);
     font-size: 0.875rem;
     text-decoration: none;
-    cursor: not-allowed;
+    &[aria-disabled='true'] { cursor: not-allowed; }
+
+    &:not([aria-disabled]):hover {
+      color: var(--color-accent);
+      text-decoration: underline;
+    }
   }
 }
 

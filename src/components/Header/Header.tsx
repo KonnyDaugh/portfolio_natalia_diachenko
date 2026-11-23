@@ -3,10 +3,10 @@ import { DownloadCv } from '../DownloadCv/DownloadCv';
 import * as styles from './Header.module.scss';
 
 const navigation = [
-  { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'About', href: '#about', disabled: false },
+  { label: 'Skills', href: '#skills', disabled: true },
+  { label: 'Projects', href: '#projects', disabled: true },
+  { label: 'Contact', href: '#contact', disabled: true },
 ];
 
 export function Header() {
@@ -49,12 +49,19 @@ export function Header() {
           className={`${styles.navigation} ${isMenuOpen ? styles.open : ''}`}
         >
           <ul className={styles.links}>
-            {navigation.map(({ label, href }) => (
+            {navigation.map(({ label, href, disabled }) => (
               <li key={href}>
                 {/* Включить ссылку после реализации соответствующей секции. */}
-                <a href={href} aria-disabled="true" title={`${label} — coming soon`}
-                  onClick={(event) => event.preventDefault()}>
-                  {label}<span className={styles.srOnly}> (coming soon)</span>
+                <a href={href} aria-disabled={disabled || undefined}
+                  title={disabled ? `${label} — coming soon` : undefined}
+                  onClick={(event) => {
+                    if (disabled) {
+                      event.preventDefault();
+                    } else {
+                      setIsMenuOpen(false);
+                    }
+                  }}>
+                  {label}{disabled && <span className={styles.srOnly}> (coming soon)</span>}
                 </a>
               </li>
             ))}
