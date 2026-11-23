@@ -84,7 +84,9 @@
   background: var(--color-accent);
   color: #fff;
   font-size: 0.875rem;
-  cursor: not-allowed;
+  text-decoration: none;
+
+  &:hover { text-decoration: underline; text-underline-offset: 0.25rem; }
 }
 
 .note {

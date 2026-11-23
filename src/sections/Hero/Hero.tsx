@@ -33,13 +33,12 @@ export function Hero() {
           and modern frontend technologies.
         </p>
         <div className={styles.actions}>
-          <button className={styles.projectsButton} type="button" disabled
-            aria-describedby="projects-note">
+          <a className={styles.projectsButton} href="#projects">
             View My Projects <span aria-hidden="true">↗</span>
-          </button>
+          </a>
           <DownloadCv />
         </div>
-        <p className={styles.note} id="projects-note">Projects and CV coming soon.</p>
+        <p className={styles.note} id="projects-note">CV coming soon.</p>
         <ul className={styles.socialLinks} aria-label="Social profiles">
           {socialLinks.map(({ label, href }) => (
             <li key={label}>
