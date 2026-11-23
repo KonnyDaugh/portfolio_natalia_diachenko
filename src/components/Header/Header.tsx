@@ -6,7 +6,7 @@ const navigation = [
   { label: 'About', href: '#about', disabled: false },
   { label: 'Skills', href: '#skills', disabled: false },
   { label: 'Projects', href: '#projects', disabled: false },
-  { label: 'Contact', href: '#contact', disabled: true },
+  { label: 'Contact', href: '#contact', disabled: false },
 ];
 
 export function Header() {
