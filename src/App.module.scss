@@ -1,6 +1,15 @@
-.container {
-  width: 100%;
-  max-width: 60rem;
-  margin-inline: auto;
-  padding: 2rem 1rem;
+.skipLink {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+  transform: translateY(-200%);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--color-text);
+  color: white;
+
+  &:focus {
+    transform: translateY(0);
+  }
 }
