@@ -38,7 +38,7 @@ export function Hero() {
           </a>
           <DownloadCv />
         </div>
-        <p className={styles.note} id="projects-note">CV coming soon.</p>
+        <p className={styles.note} id="projects-note">CV available as PDF.</p>
         <ul className={styles.socialLinks} aria-label="Social profiles">
           {socialLinks.map(({ label, href }) => (
             <li key={label}>

@@ -10,8 +10,10 @@
   border-radius: 0.5rem;
   background: transparent;
   color: var(--color-muted);
+  font: inherit;
   font-size: 0.875rem;
-  cursor: not-allowed;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .note {
