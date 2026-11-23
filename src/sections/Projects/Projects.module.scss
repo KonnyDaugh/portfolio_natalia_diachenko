@@ -1,0 +1,36 @@
+.projects {
+  max-width: var(--content-width);
+  margin-inline: auto;
+  padding: clamp(3rem, 6vw, 5rem) 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.heading {
+  margin: 0;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 2.5rem;
+    height: 2px;
+    margin-top: 1rem;
+    background: var(--color-accent);
+  }
+}
+
+.introduction {
+  max-width: 65ch;
+  margin: 1.5rem 0 2rem;
+  color: var(--color-muted);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+
+.cards {
+  display: grid;
+  gap: 1.5rem;
+}

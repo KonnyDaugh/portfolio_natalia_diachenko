@@ -4,19 +4,28 @@
   "homepage": "https://konnydaugh.github.io/portfolio_natalia_diachenko",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel src/index.html",
-    "clean": "rm -rf dist",
-    "build": "npm run clean && parcel build src/index.html --public-url ./"  
+    "dev": "parcel src/index.html --dist-dir build",
+    "clean": "rm -rf build",
+    "build": "parcel build src/index.html --dist-dir build --public-url ./",
+    "postbuild": "node scripts/copy-social-preview.mjs",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.14.2",
+    "@parcel/transformer-sass": "^2.16.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "gh-pages": "^6.3.0",
-    "parcel": "^2.14.2",
-    "sass": "^1.86.0",
-    "svgo": "^3.3.2"
+    "parcel": "^2.16.4",
+    "sass": "^1.88.0",
+    "svgo": "^3.3.5",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   }
 }

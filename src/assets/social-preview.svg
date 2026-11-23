@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#faf9f6" />
+  <rect x="96" y="80" width="64" height="64" rx="12" fill="#466781" />
+  <path d="M108 124v-24l17 24v-24m8 0h5c8 0 12 4 12 12s-4 12-12 12h-5Z" fill="none" stroke="#faf9f6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <g font-family="Helvetica Neue, Arial, sans-serif">
+    <text x="184" y="121" font-size="22" fill="#59656f">PORTFOLIO</text>
+    <rect x="96" y="206" width="64" height="4" fill="#466781" />
+    <text x="96" y="302" font-size="76" font-weight="500" letter-spacing="-2" fill="#26313a">Natalia Diachenko</text>
+    <text x="96" y="366" font-size="36" fill="#466781">Junior Frontend Developer</text>
+    <path d="M96 478h1008" stroke="#dedfdc" />
+    <text x="96" y="534" font-size="22" fill="#59656f">diachenko-webdev.from-split.com</text>
+  </g>
+</svg>
