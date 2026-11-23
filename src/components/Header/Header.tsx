@@ -4,7 +4,7 @@ import * as styles from './Header.module.scss';
 
 const navigation = [
   { label: 'About', href: '#about', disabled: false },
-  { label: 'Skills', href: '#skills', disabled: true },
+  { label: 'Skills', href: '#skills', disabled: false },
   { label: 'Projects', href: '#projects', disabled: true },
   { label: 'Contact', href: '#contact', disabled: true },
 ];

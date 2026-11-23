@@ -2,6 +2,7 @@ import * as styles from './App.module.scss';
 import { Header } from './components/Header/Header';
 import { Hero } from './sections/Hero/Hero';
 import { About } from './sections/About/About';
+import { Skills } from './sections/Skills/Skills';
 
 export function App() {
   return (
@@ -11,6 +12,7 @@ export function App() {
       <main id="main-content" tabIndex={-1}>
         <Hero />
         <About />
+        <Skills />
       </main>
     </>
   );
